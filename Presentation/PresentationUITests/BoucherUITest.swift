@@ -39,10 +39,12 @@ class BoucherUITest: XCTestCase {
     }
     
     func testFinalizeParkingByCar(){
+        // Arrange
         let app = XCUIApplication()
         
+        // Act
         _ = HomeScreenObject(app: app).tapBoucherButton()
-        
+        // Assert
         _ = BoucherScreenObject(app: app)
             .tapTypeVehicleTextField()
             .tapPickerWheelsDown("Moto")

@@ -12,7 +12,7 @@ public class Vehicle {
     private var admitionDate: Date
     private var typeVehicle: String
     
-     public init(licencePlate: String, admitionDate: Date, typeVehicle: String) throws{
+    public init(licencePlate: String, admitionDate: Date, typeVehicle: String) throws{
         self.licencePlate = licencePlate
         self.admitionDate = admitionDate
         self.typeVehicle = typeVehicle

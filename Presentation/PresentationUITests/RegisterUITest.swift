@@ -26,14 +26,19 @@ class RegisterUITest: XCTestCase {
     }
 
     func testRegisterFormMotorcycle(){
-        RegisterScreenObject(app: XCUIApplication()).tapSegment("Moto").typeCylinder("600").typeLettersPlateTextField("abc")
+        RegisterScreenObject(app: XCUIApplication())
+            .tapSegment("Moto")
+            .typeCylinder("600")
+            .typeLettersPlateTextField("abc")
             .typeNumberPlateTextField("123")
             .typeAdmitionDateTextField()
             .tapSave()
     }
     
     func testRegisterFormCar(){
-        RegisterScreenObject(app: XCUIApplication()).tapSegment("Carro").typeLettersPlateTextField("abc")
+        RegisterScreenObject(app: XCUIApplication())
+            .tapSegment("Carro")
+            .typeLettersPlateTextField("abc")
             .typeNumberPlateTextField("123")
             .typeAdmitionDateTextField()
             .tapSave()
